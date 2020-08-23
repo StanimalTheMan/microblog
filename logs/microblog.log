@@ -1,0 +1,76 @@
+2020-07-22 22:25:52,231 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-07-22 22:36:49,509 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-07-22 22:37:36,854 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-07-29 03:10:53,485 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-07-31 02:18:20,721 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-07-31 02:18:30,541 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-05 22:26:20,343 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-05 22:26:58,935 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-05 22:37:44,524 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-05 22:39:11,976 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-07 02:32:54,963 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-10 02:30:25,412 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-10 02:43:36,543 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-10 02:59:22,434 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:43]
+2020-08-12 14:38:22,212 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:45]
+2020-08-12 14:41:58,316 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:45]
+2020-08-12 16:01:35,026 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:45]
+2020-08-12 16:03:07,549 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:45]
+2020-08-12 16:03:24,592 ERROR: Exception on /reset_password_request [POST] [in /Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/stanchoi/Desktop/microblog/app/routes.py", line 164, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/stanchoi/Desktop/microblog/app/email.py", line 19, in send_password_reset_email
+    user=user, token=token))
+  File "/Users/stanchoi/Desktop/microblog/app/email.py", line 9, in send_email
+    mail.send(msg)
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/Users/stanchoi/Desktop/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+2020-08-12 16:17:07,620 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:45]
+2020-08-12 16:57:51,646 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:47]
+2020-08-15 21:01:02,525 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:49]
+2020-08-15 21:09:48,767 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:49]
+2020-08-17 15:09:31,087 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:09:40,336 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:10:10,120 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:10:30,781 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:10:35,967 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:12:15,350 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:12:46,900 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:12:54,353 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:13:12,933 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:16:55,483 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:19:22,253 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:19:30,569 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:19:35,317 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:41:04,561 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 15:44:32,960 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 17:52:26,338 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-17 18:56:22,647 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
