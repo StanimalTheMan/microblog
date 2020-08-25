@@ -74,3 +74,5 @@ ConnectionRefusedError: [Errno 61] Connection refused
 2020-08-17 15:44:32,960 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
 2020-08-17 17:52:26,338 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
 2020-08-17 18:56:22,647 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:52]
+2020-08-24 21:10:16,070 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:74]
+2020-08-24 21:23:51,897 INFO: Microblog startup [in /Users/stanchoi/Desktop/microblog/app/__init__.py:74]
